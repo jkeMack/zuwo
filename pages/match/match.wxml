@@ -86,8 +86,6 @@
       <view class='panel-footer {{matchStatus ===1?"content":"theme-color"}} f9' bindtap='matchType'>匹配模式</view>
     </view>
 
-  	<view class='f8' bindtap='goMatchSuccess'>匹配成功临时入口</view>
-
     <button class='submit-btn theme-bg' bindtap='beginMatch'>{{matchStatus === 1?'取消':'开始匹配'}}</button>
 
   </view>
