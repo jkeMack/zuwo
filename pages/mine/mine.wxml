@@ -1,0 +1,134 @@
+<!--pages/mine/mine.wxml-->
+<view class='mine'>
+  <view class='user-info'>
+    <view class='left'>
+      <image></image>
+    </view>
+    <view class='right'>
+      <view class='row'>
+        <view class='col f8 fw600'>Mr.zhang</view>
+        <view class='col text-right f6'>我的二维码</view>
+      </view>
+
+      <view class='labels f6'>
+        <view class='label'>职业玩家</view>
+        <view class='label'>天天吃鸡</view>
+        <view class='label'>神枪手</view>
+        <view class='label'>带小妹妹上分</view>
+        <view class='label'>单身狗</view>
+      </view>
+      <view class='theme-color f7' bindtap='editLabel'>设置标签</view>
+    </view>
+  </view>
+
+  <view class='menus f6'>
+    <view class='menu-item' bindtap='goMyGame'>
+      <image src='../../images/icons/my_game.png'></image>
+      <view>我的游戏</view>
+    </view>
+    <view class='menu-item' bindtap='goRanking'>
+      <image src='../../images/icons/ranking.png'></image>
+      <view>排行榜</view>
+    </view>
+    <view class='menu-item' bindtap='goMatchHistory'>
+      <image src='../../images/icons/record.png'></image>
+      <view>匹配记录</view>
+    </view>
+    <view class='menu-item' bindtap='goSet'>
+      <image src='../../images/icons/set.png'></image>
+      <view>设置</view>
+    </view>
+  </view>
+
+  <!--tab标签  -->
+  <view class='tabs f7'>
+    <view class='tab-item {{currentTab == 1?"active":""}}'>
+      <text data-tab='1' catchtap='clickTab'>好友名单</text>
+    </view>
+    <view class='tab-item {{currentTab == 2?"active":""}}'>
+      <text data-tab='2' catchtap='clickTab'>近期匹配</text>
+    </view>
+    <view class='tab-item {{currentTab == 3?"active":""}}'>
+      <text data-tab='3' catchtap='clickTab'>黑名单</text>
+    </view>
+  </view>
+
+  <!--好友名单的内容区  -->
+  <view class='friend-list' wx:if='{{currentTab == 1}}'>
+    <view class='choose-game'>
+      <view class='game-item active'>绝地求生</view>
+      <view class='game-item'>守望先锋</view>
+      <view class='game-item'>地下城与勇士</view>
+    </view>
+
+    <view style='background-color:#fff' class='pl-20 pr-20'>
+      <view class='friend-item' wx:for='{{friendList}}'>
+        <view class='left'>
+          <image></image>
+        </view>
+        <view class='right'>
+          <!--昵称  -->
+          <view class='game-name'>
+            <view class='f8'>{{item.name}}</view>
+            <view class='f6 content'><image src='../../images/icons/game_name.png'></image> game_one</view>
+          </view>
+          <!--中间的简介信息  -->
+          <view></view>
+          <!--编辑按钮区域  -->
+          <view class='edit'>
+						<image src='../../images/icons/delete.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+	<!--最近匹配的内容区  -->
+  <view class='friend-list' wx:if='{{currentTab == 2}}'>
+    <view style='background-color:#fff' class='pl-20 pr-20'>
+      <view class='friend-item' wx:for='{{friendList}}'>
+        <view class='left'>
+          <image></image>
+        </view>
+        <view class='right'>
+          <!--昵称  -->
+          <view class='game-name'>
+            <view class='f8'>{{item.name}}</view>
+            <view class='f6 content'><image src='../../images/icons/game_name.png'></image> game_one</view>
+          </view>
+          <!--中间的简介信息  -->
+          <view class='f6 contain-center theme-color'>绝地求生</view>
+          <!--编辑按钮区域  -->
+          <view class='edit'>
+						<image src='../../images/icons/add.png'></image>
+						<image src='../../images/icons/balcklist.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+	<!--黑名单的内容区  -->
+  <view class='friend-list' wx:if='{{currentTab == 3}}'>
+    <view style='background-color:#fff' class='pl-20 pr-20'>
+      <view class='friend-item' wx:for='{{friendList}}'>
+        <view class='left'>
+          <image></image>
+        </view>
+        <view class='right'>
+          <!--昵称  -->
+          <view class='game-name'>
+            <view class='f8'>{{item.name}}</view>
+            <view class='f6 content'><image src='../../images/icons/game_name.png'></image> game_one</view>
+          </view>
+          <!--中间的简介信息  -->
+          <view class='f6 contain-center theme-color'>绝地求生</view>
+          <!--编辑按钮区域  -->
+          <view class='edit'>
+						<image src='../../images/icons/delete.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

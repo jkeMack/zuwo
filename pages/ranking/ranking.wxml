@@ -1,0 +1,79 @@
+<!--pages/ranking/ranking.wxml-->
+<view class='ranking'>
+  <view class='header'>
+    <image src='../../images/rating_background.png'></image>
+    <view class='title'>绝地求生</view>
+  </view>
+
+  <view class='list'>
+    <!--列头  -->
+    <view class='list-item f7 content'>
+      <view class='ranking'>
+        排名
+      </view>
+      <view class='friend'>
+        好友
+      </view>
+      <view class='rating'>
+        Rating
+      </view>
+      <view class='kd'>
+        KD
+      </view>
+    </view>
+  </view>
+
+  <view class='list mark'>
+    <!--用户自己的排名  -->
+    <view class='list-item f8'>
+      <view class='ranking'>
+        12
+      </view>
+      <view class='friend'>
+        <view class='avtar'>
+          <image></image>
+        </view>
+        <view>
+          <view class='f8'>Mr.Zhang</view>
+          <view class='f6 content'>
+            <image src='../../images/icons/game_name.png'></image> game_one
+          </view>
+        </view>
+      </view>
+      <!--日期  -->
+      <view class='rating'>
+        2214.6
+      </view>
+      <view class='kd'>
+        3.8
+      </view>
+    </view>
+  </view>
+
+  <view class='list'>
+    <!--主体列表  -->
+    <view class='list-item f8' wx:for='{{rankList}}'>
+      <view class='ranking'>
+        {{index + 1 }}
+      </view>
+      <view class='friend'>
+        <view class='avtar'>
+          <image></image>
+        </view>
+        <view>
+          <view class='f8'>{{item.name}}</view>
+          <view class='f6 content'>
+            <image src='../../images/icons/game_name.png'></image> game_one
+          </view>
+        </view>
+      </view>
+      <!--日期  -->
+      <view class='rating'>
+        2214.6
+      </view>
+      <view class='kd'>
+        3.8
+      </view>
+    </view>
+  </view>
+</view>

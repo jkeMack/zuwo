@@ -1,0 +1,4 @@
+/* pages/edit-message/edit-message.wxss */
+page{
+	background-color: #fff;
+}

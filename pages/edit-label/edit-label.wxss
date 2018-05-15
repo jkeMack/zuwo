@@ -1,0 +1,75 @@
+/* pages/edit-label/edit-label.wxss */
+
+.header {
+  background-color: #fff;
+  color: #de903e;
+  height: 84rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 750rpx;
+}
+
+.header image {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.body {
+  margin-top: 104rpx;
+	padding-bottom: 90rpx;
+}
+
+.body .title {
+  padding: 20rpx 30rpx;
+  background-color: #fafafa;
+}
+
+.body .list {
+  background-color: #fff;
+	padding: 0 20px;
+}
+
+.body .list .item{
+  padding: 30rpx 10rpx;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	align-items: center;
+}
+
+.body .list .item:last-child{
+  border: none;
+}
+
+.body .list .item view{
+  flex: 1;
+}
+
+.body .list .item image{
+  width: 34rpx;
+	height: 25rpx;
+}
+
+.body .list .checkbox image{
+  width: 30rpx;
+	height: 30rpx;
+	border-radius: 50%;
+	border: 1px solid #eee;
+	margin-right: 20rpx;
+}
+
+
+/*底部编辑  */
+.footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	width: 750rpx;
+	height: 89rpx;
+	color: #de903e;
+}

@@ -1,0 +1,154 @@
+/* pages/mine/mine.wxss */
+
+.user-info {
+  display: flex;
+  padding: 20rpx;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.user-info .left {
+  width: 150rpx;
+  text-align: center;
+}
+
+.user-info .left image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.user-info .right {
+  flex: 1;
+}
+
+/*标签  */
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.label {
+  min-width: 80rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: #f7cba1;
+  color: #e98b2f;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.menus {
+  display: flex;
+  height: 140rpx;
+  align-items: center;
+  background-color: #fff;
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-item image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/*tab菜单  */
+
+.tabs {
+  margin-top: 20rpx;
+  display: flex;
+  background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.tab-item text {
+  display: inline-block;
+  padding: 10rpx;
+}
+
+.tab-item.active text {
+  border-bottom: 2px solid #e98b2f;
+  color: #e98b2f;
+}
+
+/*好友列表  */
+
+.friend-list {
+  /* background-color: #fff; */
+}
+
+.choose-game {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+}
+
+.game-item {
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size: 0.7rem;
+  background-color: #ccc;
+  color: #fff;
+  margin-right: 20rpx;
+}
+
+.game-item.active {
+  background-color: #e98b2f;
+}
+
+.friend-item {
+  display: flex;
+  padding: 20rpx 0;
+  align-items: center;
+	border-bottom: 1px solid #eee;
+}
+
+.friend-item .left {
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.friend-item .left image {
+  width: 88rpx;
+  height: 88rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.friend-item .right {
+  flex: 1;
+  display: flex;
+}
+
+.friend-item .game-name image {
+  width: 24rpx;
+	height: 18rpx;
+}
+
+.friend-item .right>view {
+  flex: 1;
+}
+
+.friend-item .right .edit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.friend-item .right .edit image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}

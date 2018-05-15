@@ -1,0 +1,14 @@
+<!--pages/choose-game/choose-game.wxml-->
+
+<view class='game-list'>
+  <view class='game-item' wx:for='{{gameList}}' bindtap='chooseItem'>
+    <view>
+      <view class='f10 fw500'>{{item.name}}</view>
+      <view wx:if='{{item.active === 1}}' class='name f8'>{{item.gamename}}</view>
+      <view wx:if='{{item.active === 1}}' class='contact f8'>{{item.contact}}</view>
+    </view>
+
+    <image wx:if='{{item.active === 1}}' class='active' src='../../images/icons/now.png'></image>
+    <image class='arrow' src='../../images/icons/right_arrow.png'></image>
+  </view>
+</view>

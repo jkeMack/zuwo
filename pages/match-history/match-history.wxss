@@ -1,0 +1,41 @@
+/* pages/match-history/match-history.wxss */
+
+.item {
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	margin-bottom: 20rpx;
+}
+
+.item:first-child{
+	border-top: 1px solid #eee;
+}
+
+.item .left {
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.item .left image {
+  width: 88rpx;
+  height: 88rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.item .right {
+  flex: 1;
+  display: flex;
+}
+
+.item .game-name image {
+  width: 24rpx;
+	height: 18rpx;
+}
+
+.item .right>view {
+  flex: 1;
+}

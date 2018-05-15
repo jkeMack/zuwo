@@ -1,0 +1,14 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='feedback f8'>
+  <view class='form-item'>
+    <input type='text' placeholder='请输入您的邮箱，我们会及时反馈给您'></input>
+  </view>
+  <view class='form-item mt-20'>
+    <textarea bindinput='feedbackChange' placeholder='您的意见将是我们最宝贵的财富' rows='20' maxlength='2000'></textarea>
+		<view class='text-right content'>
+			{{feedback.length}}/2000
+		</view>
+  </view>
+
+  <view class='submit'>发送</view>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/match-success/match-success.wxml-->
+<view class='match-success'>
+  <view class='header'>
+    <view class='left'>
+      <view class='img'>
+        <image src='../../images/icons/right_block.png'></image>
+      </view>
+      <view class='info'>
+        <view class='f9'>绝地求生——1缺3</view>
+        <view class='f8'>匹配成功</view>
+      </view>
+    </view>
+    <view class='right'>
+      <button class='theme-bg f8' size='mini'>重新匹配</button>
+    </view>
+  </view>
+
+  <!--队伍信息  -->
+  <view class='group'>
+    <view class='group-item' wx:key='{{index}}' wx:for='{{groupData}}'>
+      <view class='avtar'>
+        <image></image>
+      </view>
+      <view class='name f7'>
+        <image src='../../images/icons/captain.png' wx:if='{{index === 0}}'></image> {{item.name}}</view>
+      <view class='gamename f6'>
+        <image src='../../images/icons/game_name.png'></image> game_one</view>
+    </view>
+  </view>
+
+  <!--聊天部分-->
+  <view class='chat-container'>
+    <!--聊天片段，每个片段都有一个时间一个列表  -->
+    <view class='chat-item' wx:key='{{index}}' wx:for='{{chatList}}'>
+      <view class='date text-center'>
+        <text>{{item.date}}</text>
+      </view>
+      <view class='message-item' wx:for='{{item.list}}' wx:key='{{index}}' wx:for-item="msg">
+        <view class='avtar'>
+          <image></image>
+        </view>
+        <view class='content f8'>
+          <text>{{msg.content}}</text>
+          <view class='icon'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--发送消息部分  -->
+  <view class='send row p-20'>
+    <view class='col-75'>
+      <input type='text' placeholder='请输入文字'></input>
+    </view>
+    <view class='col-25 text-right'>
+
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{pickList}}">
+        <button size='mini' class='theme-bg'>
+          <image src='../../images/icons/send.png'></image>
+        </button>
+      </picker>
+    </view>
+  </view>
+</view>

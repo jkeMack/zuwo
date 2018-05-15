@@ -1,0 +1,165 @@
+/* pages/match-success/match-success.wxss */
+.match-success{
+	padding-bottom: 100rpx;
+}
+
+.header{
+	display: flex;
+	padding: 20rpx;
+	background-color: #282D30;
+	color: #fff;
+	align-items: center;
+	height: 120rpx;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 750rpx;
+}
+
+.header .left{
+	width: 500rpx;
+	display: flex;
+	align-items: center;
+}
+
+.header .right{
+	width: 210rpx;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header .img{
+	width: 80rpx;
+}
+
+.header .img image{
+	width: 64rpx;
+	height: 64rpx;
+}
+
+/*队伍信息样式  */
+.group{
+	display: flex;
+	padding: 20rpx;
+	background-color: #fff;
+	height: 160rpx;
+	position: fixed;
+	z-index: 10;	
+	top: 159rpx;
+	left: 0;
+	width: 750rpx;
+}
+
+.group-item{
+	width: 170rpx;
+	margin-right: 10rpx;
+	text-align: center;
+}
+
+.group-item:last-child{
+	margin-right: 0;
+}
+
+.group-item .avtar image{
+	width: 80rpx;
+	height: 80rpx;
+	background: #eee;
+	border-radius: 50%;
+}
+
+.group-item .name image{
+	width: 20rpx;
+	height: 22rpx;
+}
+
+.group-item .gamename image{
+	width: 20rpx;
+	height: 16rpx;
+}
+
+/*消息部分的样式  */
+.chat-container{
+	margin-top: 360rpx;
+}
+
+.chat-item{
+	padding-top: 20rpx;
+}
+
+.date text{
+	display: inline-block;
+	padding: 20rpx 40rpx;
+	background-color: #EAE9E9;
+	color: #fff;
+	font-size: .6rem;
+	border-radius: 8rpx;
+}
+
+.message-item{
+	padding: 20rpx;
+	display: flex;
+}
+
+.message-item .avtar{
+	width: 100rpx;
+}
+
+.message-item .avtar image{
+	width: 70rpx;
+	height: 70rpx;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+.message-item .content{
+	width: 610rpx;
+	background-color: #fff;
+	border-radius: 10rpx;
+	padding: 20rpx;
+	color: #1A1A1A;
+	position: relative;
+}
+
+.message-item .icon{
+	width: 20rpx;
+	height: 20rpx;
+	background-color: #fff;
+	position: absolute;
+	left: -6rpx;
+	top: 30rpx;
+	transform: rotateX(45deg);
+	-webkit-transform:rotate(45deg);
+}
+
+
+/*发送消息  */
+.send{
+	width: 710rpx;
+	height: 60rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.send input{
+	font-size: .8rem;
+	background-color: #f1f1f1;
+	border-radius: 10rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	width: 100%;
+	padding-left: 20rpx;
+}
+
+.send button{
+	height: 60rpx;
+}
+
+.send image{
+	width: 44rpx;
+	height: 44rpx;
+	margin-top: 8rpx;
+}

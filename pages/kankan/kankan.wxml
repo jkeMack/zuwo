@@ -1,0 +1,21 @@
+<!--pages/kankan/kankan.wxml-->
+<view class='kankan'>
+  <swiper indicator-dots="true" indicator-active-color='rgba(255,255,255,0.6)' indicator-color='rgba(255,255,255,1)' autoplay="true" interval="3000" duration="800" class='swiper-container'>
+    <swiper-item class='slide-item' wx:for="{{swiperImages}}">
+      <image src="{{item}}" class="slide-image" />
+      <view class='info'>高开低走，谈谈吃鸡的十大窍门，教你如何成为大神</view>
+    </swiper-item>
+  </swiper>
+
+  <view class='article-list pl-10 pr-10'>
+    <view class='article-item row p-20' wx:for='{{articleList}}' bindtap='goDetail'>
+			<view class='col-25'>
+				<image src='{{item.src}}'></image>
+			</view>
+			<view class='col-75 p-10'>
+				<view class='text-ellipsis f9'>{{item.name}}</view>
+				<view class='text-ellipsis f8 content'>{{item.info}}</view>
+			</view>
+    </view>
+  </view>
+</view>

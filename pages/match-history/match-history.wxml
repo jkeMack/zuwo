@@ -1,0 +1,22 @@
+<!--pages/match-history/match-history.wxml-->
+<view class='match-history'>
+  <view class='item' wx:for='{{historyList}}'>
+    <view class='left'>
+      <image></image>
+    </view>
+    <view class='right'>
+      <!--昵称  -->
+      <view class='game-name'>
+        <view class='f8'>{{item.name}}</view>
+        <view class='f6 content'>
+          <image src='../../images/icons/game_name.png'></image> game_one
+				</view>
+				<view class='f7 theme-color'>YY频道123456</view>
+      </view>
+      <!--日期  -->
+      <view class='f6 content text-right'>
+				2018/04/12 18:00
+			</view>
+    </view>
+  </view>
+</view>

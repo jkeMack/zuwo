@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/match/match",
+    "pages/kankan/kankan",
+    "pages/mine/mine",
+    "pages/kankan-detail/kankan-detail",
+    "pages/choose-game/choose-game",
+    "pages/match-type/match-type",
+    "pages/edit-message/edit-message",
+    "pages/edit-label/edit-label",
+    "pages/edit-label/add-label-item/add-label-item",
+    "pages/my-game/my-game",
+    "pages/ranking/ranking",
+    "pages/match-history/match-history",
+    "pages/feedback/feedback",
+    "pages/set/set",
+    "pages/app-info/app-info",
+		"pages/match-success/match-success"		
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "组起",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "black",
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/match/match",
+        "text": "组起",
+        "iconPath": "./images/icons/group_line.png",
+        "selectedIconPath": "./images/icons/group_block.png"
+      },
+      {
+        "pagePath": "pages/kankan/kankan",
+        "text": "看看",
+        "iconPath": "./images/icons/watching_line.png",
+        "selectedIconPath": "./images/icons/watching_block.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/icons/mine_line.png",
+        "selectedIconPath": "./images/icons/mine_block.png"
+      }
+    ]
+  }
+}

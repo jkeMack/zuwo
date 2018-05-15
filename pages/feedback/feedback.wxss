@@ -1,0 +1,21 @@
+/* pages/feedback/feedback.wxss */
+
+.form-item {
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.submit {
+  text-align: center;
+  width: 750rpx;
+  height: 100rpx;
+	background-color: #fff;
+	color: #de903e;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+textarea{
+	width: 100%;
+}

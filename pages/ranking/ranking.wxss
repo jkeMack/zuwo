@@ -1,0 +1,71 @@
+/* pages/ranking/ranking.wxss */
+.header{
+	height: 260rpx;
+	position: relative;
+}
+
+.header image {
+  width: 750rpx;
+  height: 260rpx;
+}
+
+.header .title{
+	position: absolute;
+	width: 750rpx;
+	text-align: center;
+	top: 160rpx;
+	font-size: 1rem;
+	color: #fff;
+}
+
+.list {
+  padding: 0 20rpx;
+  background-color: #fff;
+  width: 710rpx;
+}
+
+.list.mark{
+	background-color: #eee;
+}
+
+.list-item {
+  display: flex;
+  width: 710rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.ranking {
+  width: 100rpx;
+	text-align: center;
+}
+
+.friend {
+  width: 300rpx;
+	display: flex;
+}
+
+.friend .avtar{
+	width: 80rpx;
+}
+
+.friend .avtar image{
+	width: 70rpx;
+	height: 70rpx;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+.rating {
+  width: 200rpx;
+}
+
+.kd {
+  width: 110rpx;
+}
+
+.friend image {
+  width: 24rpx;
+  height: 18rpx;
+}

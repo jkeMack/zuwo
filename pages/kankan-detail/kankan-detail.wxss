@@ -1,0 +1,63 @@
+/* pages/kankan-detail/kankan-detail.wxss */
+page{
+	background-color: #fff;
+}
+
+.kankan-detail{
+	padding-bottom: 3rem;
+}
+
+.kankan-detail .content-item image{
+	width: 100%;
+}
+
+.comment-item{
+	padding-bottom: 2rem;
+	line-height: 1.2rem;
+}
+
+.comment-item .avtar{
+	width: 120rpx;
+	height: 120rpx;
+	background-color: #ccc;
+	border-radius: 50%;
+}
+
+.submit-comment{
+	height: 3rem;
+	align-items: center;
+	padding: 20rpx;
+	display: flex;
+	border-top: 1px solid #efefef;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 710rpx;
+	background-color: #fff;
+}
+
+.submit-comment .left{
+	width: 500rpx;
+}
+
+.submit-comment .right{
+	width: 210rpx;
+	display: flex;
+	align-items: center;
+}
+
+.submit-comment input{
+	width: 470rpx;
+	border-radius: 1rem;
+	border: 1px solid #efefef;
+	background-color: #ddd;
+	padding-left: 30rpx;
+	font-size: .9rem;
+	height: 2rem;
+}
+
+.submit-comment image{
+	width: 50rpx;
+	height: 50rpx;
+	margin-left: 40rpx;
+}

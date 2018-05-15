@@ -1,0 +1,272 @@
+/**app.wxss**/
+
+/*所有页面底色*/
+
+page {
+   background-color: #eee; 
+}
+
+/*主题色  */
+
+.theme-color {
+  color: #de903e;
+}
+
+/*主题背景色  */
+
+.theme-bg {
+  background-color: #de903e;
+  color: #fff;
+}
+
+.border-left {
+  border-left: 1px solid #eee;
+}
+
+.border-right {
+  border-right: 1px solid #eee;
+}
+
+.border-top {
+  border-top: 1px solid #eee;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee;
+}
+
+/*行左右布局  */
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*通用padding样式  */
+
+.p-10 {
+  padding: 10rpx;
+}
+
+.pt-10 {
+  padding-top: 10rpx;
+}
+
+.pb-10 {
+  padding-bottom: 10rpx;
+}
+
+.pl-10 {
+  padding-left: 10rpx;
+}
+
+.pr-10 {
+  padding-right: 10rpx;
+}
+
+.p-20 {
+  padding: 20rpx;
+}
+
+.pt-20 {
+  padding-top: 20rpx;
+}
+
+.pb-20 {
+  padding-bottom: 20rpx;
+}
+
+.pl-20 {
+  padding-left: 20rpx;
+}
+
+.pr-20 {
+  padding-right: 20rpx;
+}
+
+/*通用margin  */
+
+.m-10 {
+  margin: 10rpx;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.ml-10 {
+  margin-left: 10rpx;
+}
+
+.mr-10 {
+  margin-right: 10rpx;
+}
+
+.m-20 {
+  margin: 20rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+/*panel样式  */
+
+.panel {
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.panel-header {
+  line-height: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.panel-body {
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.panel-footer {
+  line-height: 3rem;
+  text-align: center;
+}
+
+/*字体样式  */
+.f6 {
+  font-size: 0.6rem;
+}
+
+.f7 {
+  font-size: 0.7rem;
+}
+
+.f8 {
+  font-size: 0.8rem;
+}
+
+.f9 {
+  font-size: 0.9rem;
+}
+
+.f10 {
+  font-size: 1rem;
+}
+
+.f12 {
+  font-size: 1.2rem;
+}
+
+.f15 {
+  font-size: 1.5rem;
+}
+
+.f20 {
+  font-size: 2rem;
+}
+
+.fw800{
+	font-weight: 800;
+}
+
+.fw700{
+	font-weight: 700;
+}
+
+.fw600{
+	font-weight: 600;
+}
+
+.fw500{
+	font-weight: 500;
+}
+
+.fw400{
+	font-weight: 400;
+}
+
+.fw200{
+	font-weight: 200;
+}
+
+/*文字内容  */
+
+.title {
+  color: #333;
+}
+
+.content {
+  color: #999;
+}
+
+/*垂直水平居中  */
+
+.contain-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*垂直居中  */
+.v-center{
+	display: flex;
+	align-items: center;
+}
+
+.h-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.submit-btn {
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+/*文字超过宽度省略  */
+.text-ellipsis {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

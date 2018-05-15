@@ -1,0 +1,10 @@
+/* pages/set/set.wxss */
+.row{
+	background-color: #fff;
+	padding: 20rpx;
+}
+
+.row image{
+	width: 14rpx;
+	height: 28rpx;
+}

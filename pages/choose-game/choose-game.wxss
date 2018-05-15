@@ -1,0 +1,34 @@
+/* pages/choose-game/choose-game.wxss */
+
+.game-list {
+  padding: 20rpx;
+}
+
+.game-item {
+  height: 200rpx;
+  border-radius: 10rpx;
+  background-color: #de903e;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30rpx 40rpx;
+  margin-bottom: 20rpx;
+	align-items: center;
+	display: flex;
+}
+
+.game-item .active {
+  width: 93rpx;
+  height: 63rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.game-item .arrow {
+  width: 15rpx;
+  height: 28rpx;
+  position: absolute;
+  top: 86rpx;
+  right: 20rpx;
+}

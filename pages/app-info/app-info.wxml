@@ -1,0 +1,10 @@
+<!--pages/app-info/app-ifno.wxml-->
+<view class='app-info f8'>
+  <view class='logo text-center'>
+    <image></image>
+    <view>组起</view>
+  </view>
+  <view class='message'>
+    这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍这里是小程序介绍
+  </view>
+</view>

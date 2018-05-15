@@ -1,0 +1,24 @@
+<!--pages/match-type/match-type.wxml-->
+<view class='match-type'>
+  <view class='row theme-bg f8 v-center p-20'>
+    <view class='col'>
+      <view>游戏内昵称：Lfsfas</view>
+      <view>联络方式：YY频道123456</view>
+    </view>
+    <view class='col text-right' bindtap='editMessage'>
+      重设
+    </view>
+  </view>
+
+  <!--选择类型区域  -->
+  <view class='p-20'>
+    <view class='choose mt-20 f8' wx:for='{{chooseData}}' wx:key='{{item.type}}'>
+      <view class='type'>{{item.name}} <text class='content' wx:if='{{item.multiple}}'>(此项可多选)</text></view>
+      <view class='container mt-20 mr-20'>
+        <view wx:key='{{select.id}}' data-multiple='{{item.multiple}}' data-type='{{item.type}}' data-id='{{select.id}}' bindtap='chooseItem' class='choose-item mb-20 mr-20 {{select.checked?"active":""}}' wx:for='{{item.data}}' wx:for-item="select">
+          {{select.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

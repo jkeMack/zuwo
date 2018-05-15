@@ -1,0 +1,16 @@
+<!--pages/edit-message/edit-message.wxml-->
+<view class='edit-message p-20'>
+  <view class='contain-center'>
+    <image style='width:200rpx;height:200rpx;' src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1525867175&di=dca51852fcdb24380a34b2dd397cba68&src=http://image.coolapk.com/discovery/2016/1110/577077_1478757088_9735.png'></image>
+  </view>
+
+  <view class='input-item f8 border-bottom pl-20'>
+    <label>游戏内昵称</label>
+    <input class='mt-20' placeholder="请输入游戏昵称" auto-focus/>
+  </view>
+  <view class='input-item mt-20 f8 border-bottom pl-20'>
+    <label>联络方式</label>
+    <input class='mt-20' placeholder="请输入联络方式" />
+  </view>
+  <view class='tip f7 mt-20 pl-20 content'>例：“大家进YY123456频道”“进QT123456房间”</view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/set/set.wxml-->
+<view class='set f8'>
+  <view class='switch row mb-20'>
+    <view class='col-75'>
+      <view>共享好友(匹配)</view>
+      <view class='f7 content'>关闭后，也将无法匹配到别人的好友</view>
+    </view>
+    <view class='col-25 text-right'>
+      <switch color='#428FE5' checked bindchange="switchChange" />
+    </view>
+  </view>
+
+  <view class='row border-bottom' bindtap='goFeedback'>
+    <view class='col'>反馈意见</view>
+    <view class='col text-right'>
+      <image src='../../images/icons/into_arrow.png'></image>
+    </view>
+  </view>
+  <view class='row' bindtap='goInfo'>
+    <view class='col'>小程序介绍</view>
+    <view class='col text-right'>
+      <image src='../../images/icons/into_arrow.png'></image>
+    </view>
+  </view>
+</view>

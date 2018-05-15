@@ -1,0 +1,14 @@
+<!--pages/my-game/my-game.wxml-->
+<view class='my-game p-20'>
+  <view class='f7 content'>点击游戏修改匹配信息</view>
+  <view class='game-container mt-20'>
+    <view class='game-item mt-20' bindtap='editMessage' wx:for='{{gameList}}'>
+      <view class='img'>
+        <image style='width:90rpx;height:90rpx;' src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1525867175&di=dca51852fcdb24380a34b2dd397cba68&src=http://image.coolapk.com/discovery/2016/1110/577077_1478757088_9735.png'></image>
+      </view>
+
+      <view class='f7 text-center mt-10'>{{item.name}}</view>
+    </view>
+
+  </view>
+</view>

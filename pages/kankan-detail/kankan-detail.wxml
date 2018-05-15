@@ -1,0 +1,51 @@
+<!--pages/kankan-detail/kankan-detail.wxml-->
+<view class='kankan-detail'>
+  <view class='p-20 border-bottom'>
+    <view class='title'>高手教你如何玩绝地</view>
+    <view class='author f8 content'>
+      作者：Mr.zhang 2018/05/01 16:28
+    </view>
+
+    <view class='article-content'>
+      <view class='content-item mb-20' wx:for='{{articleContent}}'>
+        <view wx:if='{{item.type =="text"}}' class='text f9'>{{item.content}}</view>
+        <image mode='scaleToFill' wx:else='{{item.type == "img"}}' class='img' src='{{item.content}}'></image>
+      </view>
+    </view>
+  </view>
+  <!--评论  -->
+  <view class='comment-container'>
+    <view class='comment-title f9 p-20'>
+      评论（{{commentList.length}}条）
+    </view>
+    <view class='comment-item p-20' wx:for='{{commentList}}'>
+      <view class='row'>
+        <view class='col-25'>
+          <image class='avtar' src='{{item.avtar}}'></image>
+        </view>
+        <view class='col-75'>
+          <view class='row'>
+            <view class='col f9'>
+              {{item.name}}
+              <view class='f8 content'>{{item.gamename}}</view>
+            </view>
+            <view class='col text-right f8 content'>{{item.date}}</view>
+          </view>
+          <view class='f8'>
+            {{item.comment}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='submit-comment'>
+    <view class='left'>
+      <input type='text' placeholder='我也来说一句'></input>
+    </view>
+    <view class='right text-right'>
+      <image src='../../images/icons/message.png'></image>
+      <image src='../../images/icons/share.png'></image>
+    </view>
+  </view>
+</view>

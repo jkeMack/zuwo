@@ -1,0 +1,33 @@
+<!--pages/edit-label/edit-label.wxml-->
+<view class='edit-label'>
+  <view class='header f7'>
+    <view bindtap='addLabel'>
+      <image src='../../images/icons/add_tag.png'></image>
+      创建自己的标签
+    </view>
+  </view>
+  <view class='body'>
+    <view class='title f7'>我的标签
+      <text class='content'>（可创建十个标签，最多展示五个）</text>
+    </view>
+    <!--用于选择  -->
+    <view class='list' wx:if='{{!isEdit}}'>
+      <view data-id='{{item.id}}' bindtap='clickItem' class='item f8' wx:for='{{labelList}}'>
+        <view data-id='{{item.id}}'>{{item.name}}</view>
+        <view data-id='{{item.id}}' class='h-right v-center'>
+          <image wx:if='{{item.checked}}' src='../../images/icons/right.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <!--用于编辑删除  -->
+    <view class='list' wx:if='{{isEdit}}'>
+      <view data-id='{{item.id}}' bindtap='clickItem' class='item f8 checkbox' wx:for='{{editLabelList}}'>
+        <image data-id='{{item.id}}' wx:if='{{item.checked}}' src='../../images/icons/check.png'></image>
+        <image data-id='{{item.id}}' wx:if='{{!item.checked}}'></image>
+        <view data-id='{{item.id}}'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='footer f8' bindtap='clickEdit'>{{isEdit?'删除':'编辑'}}</view>
+</view>

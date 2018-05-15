@@ -1,0 +1,12 @@
+<!--pages/edit-label/add-label-item/add-label-item.wxml-->
+<!--pages/edit-message/edit-message.wxml-->
+<view class='add-label-item p-20'>
+  <view class='input-item f8 border-bottom pl-20'>
+    <label class='f7 content'>标签最多不超过五个字</label>
+    <input class='mt-20' auto-focus/>
+  </view>
+
+  <view class='mt-20 p-20'>
+    <button class='submit-btn theme-bg'>保存</button>
+  </view>
+</view>

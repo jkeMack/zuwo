@@ -1,0 +1,28 @@
+/* pages/my-game/my-game.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-item {
+  width: 162.5rpx;
+  margin-right: 20rpx;
+}
+
+.game-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.game-item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 10rpx;
+  padding: 10rpx 0;
+}

@@ -1,0 +1,13 @@
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <!-- <view class='wx-dialog-title'>{{ title }}</view> -->
+        <view class='wx-dialog-content'>
+						<slot name="content"></slot>
+				</view>
+        <view class='wx-dialog-footer'>
+          <view class='wx-dialog-btn1' catchtap='_cancelEvent'>{{ cancelText }}</view>
+          <view class='wx-dialog-btn2' catchtap='_confirmEvent'>{{ confirmText }}</view>
+        </view>
+    </view>
+</view>

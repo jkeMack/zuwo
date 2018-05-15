@@ -1,0 +1,94 @@
+<!--pages/match/match.wxml-->
+<view class='match'>
+  <view class='match-head theme-bg p-20'>
+    <view class='row'>
+      <view class='col'>
+        <view bindtap='chooseGame'>
+          绝地求生
+          <text class='arrow-top'></text>
+        </view>
+      </view>
+      <view class='col text-right'>
+        <image src='../../images/test.jpg'></image>
+        <view class='code-info'>长按加我</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='match-content'>
+    <view class='panel'>
+      <view class='panel-body'>
+        <view class='text-center m-20'>
+          <view class='f10'>
+            {{matchStatus ===1?'开始匹配':'匹配时间'}} {{countTime.h||'00'}}:{{countTime.m||'00'}}:{{countTime.s||'00'}}
+          </view>
+          <view class='f8 theme-color'>仅好友</view>
+        </view>
+        <view class='menus'>
+          <view class='menu-item'>
+            <view class='row'>
+              <view class='col-25 contain-center'>
+                <image src='../../images/icons/friends.png'></image>
+              </view>
+              <view class='col text-center'>
+                <view class='title f8'>好友</view>
+                <view class='content f8'>16</view>
+              </view>
+            </view>
+          </view>
+          <view class='menu-item'>
+            <view class='row'>
+              <view class='col-25 contain-center'>
+                <image src='../../images/icons/on_line.png'></image>
+              </view>
+              <view class='col text-center'>
+                <view class='title f8'>在线好友</view>
+                <view class='content f8'>6</view>
+              </view>
+            </view>
+          </view>
+          <view class='menu-item'>
+            <view class='row'>
+              <view class='col-25 contain-center'>
+                <image src='../../images/icons/time.png'></image>
+              </view>
+              <view class='col text-center'>
+                <view class='title f8'>匹配时间</view>
+                <view class='content f8'>30分钟</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class='group mt-20'>
+          <view class='group-item text-center'>
+            <image mode='scaleToFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525450501630&di=0cafbd2d6fdffa4e48b37a3bc94493ed&imgtype=0&src=http%3A%2F%2Fi2.dukuai.com%2Fx.attachments%2F2011%2F11%2F07%2F22616848_201111071443001.jpg'></image>
+            <view class='f9'>康斯坦丁</view>
+            <view class='content f8'>Mr.DLP</view>
+          </view>
+          <view class='group-item text-center'>
+            <image mode='scaleToFill'></image>
+            <view class='f9'>???</view>
+            <view class='content f8'>???</view>
+          </view>
+          <view class='group-item text-center'>
+            <image mode='scaleToFill'></image>
+            <view class='f9'>???</view>
+            <view class='content f8'>???</view>
+          </view>
+          <view class='group-item text-center'>
+            <image mode='scaleToFill'></image>
+            <view class='f9'>???</view>
+            <view class='content f8'>???</view>
+          </view>
+        </view>
+      </view>
+      <view class='panel-footer {{matchStatus ===1?"content":"theme-color"}} f9' bindtap='matchType'>匹配模式</view>
+    </view>
+
+  	<view class='f8' bindtap='goMatchSuccess'>匹配成功临时入口</view>
+
+    <button class='submit-btn theme-bg' bindtap='beginMatch'>{{matchStatus === 1?'取消':'开始匹配'}}</button>
+
+  </view>
+</view>

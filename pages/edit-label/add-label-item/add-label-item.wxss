@@ -1,0 +1,4 @@
+/* pages/edit-label/add-label-item/add-label-item.wxss */
+page{
+	background-color: #fff;
+}

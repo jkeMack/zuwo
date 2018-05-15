@@ -1,0 +1,45 @@
+/* pages/kankan/kankan.wxss */
+page{
+	background-color: #fff;
+}
+
+.kankan .swiper-container {
+  height: 10rem;
+}
+
+.kankan .swiper-container .slide-image {
+  width: 100%;
+}
+
+.slide-item {
+  position: relative;
+}
+
+.slide-item .info {
+  width: 610rpx;
+	padding: 0 120rpx 0 20rpx;
+  font-size: 0.9rem;
+  color: #fff;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  line-height: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wx-swiper-dots{
+	margin-left: 300rpx;
+}
+
+.article-list .article-item{
+	border-bottom: 1px solid #efefef;
+}
+
+.article-list .article-item image{
+	width: 172rpx;
+	height: 120rpx;
+	background-color: #ccc;
+	border-radius: 10rpx;
+}
